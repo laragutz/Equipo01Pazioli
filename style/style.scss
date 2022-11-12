@@ -1,0 +1,106 @@
+@import"mixins";
+@import"fonts";
+@import"partners";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.section__contacto{
+    background-image: url(../ferImg/background.png);
+    width: 100%;
+    position: relative;
+}
+.section__contacto::before{
+    position:absolute;
+    content:"";
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255,.66);
+}
+.section__info{
+    padding-top: 17vh;
+    position: relative;
+}
+.section__sub{
+    @include subtitle();
+    height: 50px;
+    position: relative;
+}
+.texto{
+    @include text();
+    margin: 15px 30%;
+    position: relative;
+}
+.section__label1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 20px 30%;
+    position: relative;
+}
+.section__label2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30%;
+    position: relative;
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        position: relative;
+    }
+}
+.form-control{
+    margin-top: 10px;
+    position: relative;
+    height: 25px;
+    @include form();
+}
+.form-label{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+}
+.section__label4{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-bottom: 20px;
+    margin: 20px 30% 0 30%;
+    position: relative;
+    
+    .label-paragraf{
+        font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    padding-bottom: 10px;
+    }
+
+    #messageArea{
+        padding-top: 10px;
+        height: 100px;
+        margin-bottom: 15px;
+        @include form();
+    }
+
+    .btn{
+        background-color: black;
+        color: white;
+        border-radius: 7px;
+        height: 30px;
+    }
+}

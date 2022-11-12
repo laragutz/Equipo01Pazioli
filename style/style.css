@@ -1,1 +1,291 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
+.section__partners {
+  background: linear-gradient(180deg, rgb(208, 204, 205) 28%, rgb(255, 255, 255) 70%);
+}
+
+.section__parag {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 60px;
+}
+
+.section__part1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 7%;
+}
+
+.partner__div1 {
+  background-color: black;
+  color: white;
+  width: 30%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: right;
+}
+.partner__div1 .partners__paragraf1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.partner__div {
+  background-color: black;
+  color: white;
+  width: 30%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 50px;
+}
+.partner__div .partners__paragraf {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 38px;
+}
+.partner__div .partners__paragraf1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+.partner__div .partner1 {
+  background-color: grey;
+  width: 24%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 7px 22% 7px 7px;
+}
+.partner__div .partner2 {
+  background-color: grey;
+  width: 24%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 7px 22% 7px 7px;
+}
+.partner__div .partner6 {
+  background-color: grey;
+  width: 24%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 7px 22% 7px 7px;
+}
+.partner__div .partner7 {
+  background-color: grey;
+  width: 24%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 7px 22% 7px 7px;
+}
+
+.section__part2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7%;
+}
+.section__part2 .partner3 {
+  background-color: grey;
+  width: 24%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 7px 7px 7px 22%;
+}
+.section__part2 .partner4 {
+  background-color: grey;
+  width: 24%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 7px 7px 7px 22%;
+}
+.section__part2 .partner5 {
+  background-color: grey;
+  width: 24%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 7px 7px 7px 22%;
+}
+
+.section__part3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section__contacto {
+  background-image: url(../ferImg/background.png);
+  width: 100%;
+  position: relative;
+}
+
+.section__contacto::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.66);
+}
+
+.section__info {
+  padding-top: 17vh;
+  position: relative;
+}
+
+.section__sub {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  position: relative;
+}
+
+.texto {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 30%;
+  position: relative;
+}
+
+.section__label1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 20px 30%;
+  position: relative;
+}
+
+.section__label2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 30%;
+  position: relative;
+}
+.section__label2 div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: relative;
+}
+
+.form-control {
+  margin-top: 10px;
+  position: relative;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.66);
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 5px;
+}
+
+.form-label {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+}
+
+.section__label4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-bottom: 20px;
+  margin: 20px 30% 0 30%;
+  position: relative;
+}
+.section__label4 .label-paragraf {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  padding-bottom: 10px;
+}
+.section__label4 #messageArea {
+  padding-top: 10px;
+  height: 100px;
+  margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.66);
+  font-family: "Raleway";
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 5px;
+}
+.section__label4 .btn {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */

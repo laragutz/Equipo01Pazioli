@@ -1,0 +1,41 @@
+@mixin subtitle {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin form {
+    background-color: rgb(0, 0, 0, .66);
+         font-family: 'Raleway';
+         color: white;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 16px;
+         border-radius: 5px;
+    
+}
+@mixin divPartner {
+    background-color: black;
+        color: white;
+        width: 30%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 50px;
+}
