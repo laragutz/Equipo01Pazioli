@@ -1,1 +1,38 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.h3partners, .forma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactanos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.relleno {
+  height: 50px;
+}
+
+.forma {
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.partners__partner {
+  width: 30%;
+  border: 1px black solid;
+  border-radius: 1000px;
+}
+
+.partners1 {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */

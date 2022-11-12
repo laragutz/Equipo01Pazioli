@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+%centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%centrar_columna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+.relleno{
+    height: 50px;
+}
+
+.contactanos{
+    @extend %centrar_columna;
+}
+
+// form{
+//     margin-left: 20%;
+//     width: 50%;
+//     @extend %centrar;
+//     flex-wrap: wraps;
+// }
+.forma{
+    @extend %centrar;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.h3partners{
+    @extend %centrar;
+
+}
+
+// .footer__partners{
+//     width: 100%;
+//     height: 589px;
+//     @extend %centrar;
+//     flex-wrap: wrap;
+
+// }
+
+.partners__partner{
+    width: 30%;
+    border: 1px black solid;
+    border-radius: 1000px;
+}
+.partners1{
+    display: flex;
+    justify-content: space-around;
+
+}
