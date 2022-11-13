@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
 *{
     padding: 0;
@@ -117,3 +116,95 @@ li{
     margin-bottom: 20px;
     margin-left: 100px;
 }
+
+@media only screen and (max-width: 600px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    footer{
+        height: 100vh;
+    }
+    .footer__main{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 120px;
+    }
+    .nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .nosotros ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .nosotros li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nosotros h2{
+    display: flex;
+    justify-content: center;
+    }
+    .contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contacto ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto h2{
+    display: flex;
+    justify-content: center;
+    }
+    
+    .footer__final{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .redes{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .redes ul{
+        margin-left: 100px;
+    }
+    
+    .derechos{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .derechos p{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+}
+
+
