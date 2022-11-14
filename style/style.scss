@@ -1,5 +1,7 @@
 // ********************************************************DESKTOP
-
+@import"fontsPianos";
+@import"mixinsPianos";
+@import"_alestyle";
 // START CINTHIA   
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
@@ -20,7 +22,6 @@
     
     main{
         @include tam(100%, 100%);
-        background-color: aquamarine ;
         // font-family: 'Raleway', sans-serif;
     }
     
@@ -174,6 +175,7 @@
     background-repeat: no-repeat;
     width: 100%;
     position: relative;
+    margin-top: 12%;
 }
 .section__contacto::before{
     position:absolute;
@@ -184,7 +186,7 @@
     right: 0;
     background-color: rgb(255, 255, 255,.66);
 }
-.section__info{
+.section__info1{
     padding-top: 17vh;
     position: relative;
 }
@@ -340,9 +342,6 @@ li{
     justify-content: flex-end;
     flex-direction: column;
 }
-.contacto h2{
-    
-}
 .relleno{
     height: 100 px;
     clear: both;
@@ -352,7 +351,6 @@ li{
 .footer__final{
     display: flex;
     width: 100%;
-    height: 100px;
 }
 .redes{
     width: 30%;
@@ -450,10 +448,11 @@ li{
         .grupo1{
             background: linear-gradient(rgb(6, 6, 6),rgb(19, 18, 18) ,rgb(10, 10, 10),#fff);
             // background:linear-gradient(rgb(255, 255, 255) 100%, rgba(59, 58, 58, 0) , rgba(69, 66, 66, 0) 75%, #141414 100%);
-            padding: 40px 40px 40px 40px;
+            //padding: 40px 40px 40px 40px;
             // height: 100%;     
                   
             h2{
+                margin-top: 40px;
                 font-family: $abril;
                 font-size: 30px;
                 color: #fff;
@@ -461,7 +460,6 @@ li{
                 letter-spacing: 5px;
                 position: relative;
                 z-index:1; 
-               
             }
             .new__start{
                 display: flex;
@@ -562,7 +560,7 @@ li{
         content: "";
         width: 100%;
         // height: auto;
-        min-height: 100%;
+        height: 1000px;
         position: absolute;
         top: 0;
         left: 0;
