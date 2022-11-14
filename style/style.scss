@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@media screen and(min-width: 1200px) {
+
+*{
+    padding: 0;
+    margin: 0;
+}
+$abril: 'Abril Fatface';
+$raleway:'Raleway';
+
+@mixin tam ($ancho, $largo) {
+    width: $ancho;
+    height: $largo    
+}
+
+main{
+    @include tam(100%, 100%);
+    background-color: aquamarine ;
+    // font-family: 'Raleway', sans-serif;
+}
+
+section{
+    background-image: url(../cint-img/image2.png);
+    display: grid;
+    align-content: center;
+    gap: 1em;
+    height: 100%;
+    background-size: cover;
+     
+    .new{
+        // @include tam(100%,300px);
+        padding: 5px;    
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        
+        // background-color: aquamarine;   
+    }
+    .new h1{
+        @include tam(400px,100px);
+        font-family: $abril;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.05em;
+        z-index: 1;
+        // background-color: antiquewhite;
+    }
+
+    .new__start{
+        display: flex;
+        
+    }
+    .principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    .grupo1{
+        padding: 100px;
+        h2{
+            font-family: $abril;
+            font-size: 30px;
+            color: #fff;
+        }
+        .new__start{
+            display: flex;
+            @include tam(50%,30%);
+            justify-content: space-around;
+            align-items: center;    
+
+            p{
+                font-family: $raleway;
+                font-size: 20px;
+                padding: 10px;
+                color: #fff;
+            }
+        }
+        .new__precio{
+            h1{
+                font-family: $abril;                
+                font-size: 30px;
+                color: #fff;
+            }
+            p{
+                font-family: $raleway;
+                font-size: 15px;
+                line-height: 20px;
+                padding: 5px;
+                color: #fff
+            }
+            nav{
+                @include tam(80%,100%);
+            }
+            ul{
+                @include tam(100%,100%);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li{
+                    list-style: none;
+                    width: 80%;
+                    padding: 10px;
+                    a{
+                        font-family: $raleway;
+                        font-weight: 700;
+                        text-decoration: none;
+                        font-size: 12px;
+                        color: #fff;
+                    }
+                }
+            }
+            .button{
+                background-color: black;
+                @include tam(250px,40%);
+                border-radius: 10px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                color: #fff;
+                font-size: 15px;
+                text-decoration: none;
+                text-align: center;
+                }
+            }
+        }
+      }
+    }  
+   
+}
+
+section::after{
+    content: "";
+    width: 100%;
+    // height: auto;
+    min-height: 120vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#fff, #000 ,#fff);
+    opacity: 0.7;
+
+}
+
+
+}
+// ******************************
+
+@media screen and(max-width: 600px) {
+
+    $abril: 'Abril Fatface';
+    $raleway:'Raleway';
+    
+    @mixin tam ($ancho, $largo) {
+        width: $ancho;
+        height: $largo    
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    main{
+        @include tam(100%, 100%);
+        // background-color: aquamarine ;
+        // font-family: 'Raleway', sans-serif;
+    }
+    
+    section{
+        @include tam(100vw,120vh);
+        background-image: url(../cint-img/image2.png);
+        align-content: center;
+        gap: 1em;
+        background-size: cover;
+         
+        .new{
+            @include tam(100%,130px);
+            padding: 5px;    
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            z-index: 1; 
+        }
+        .new h1{
+            @include tam(400px,100px);
+            font-family: $abril;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 43px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.05em;
+            z-index: 1;
+            // background-color: antiquewhite;
+        }
+    
+        .new__start{
+            display: flex;
+            
+        }
+        .principal{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        // z-index: 1;
+        .grupo1{
+            background:linear-gradient(#fff 100%, #0000 75%, #0000 75%, #ffffff 100%);
+            padding: 40px 40px 10px 40px;
+            height: 80vh;     
+                  
+            h2{
+                font-family: $abril;
+                font-size: 30px;
+                color: #fff;
+                text-align: center;
+                letter-spacing: 5px;
+                position: relative;
+                z-index:1; 
+               
+            }
+            .new__start{
+                display: flex;
+                width: 70%;
+                justify-content: center;
+                align-items: center;  
+                position: relative;
+                z-index:1;                 
+    
+                p{
+                    font-family: $raleway;
+                    font-size: 15px;
+                    text-align: center;
+                    padding: 10px;
+                    color: #fff;
+                }
+            }
+            .new__precio{
+                h1{
+                    font-family: $abril;                
+                    font-size: 30px;
+                    color: #fff;
+                    text-align: center;
+                    letter-spacing: 3px;
+                    position: relative;
+                    z-index:1; 
+                }
+                p{
+                    font-family: $raleway;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-align: center;
+                    padding: 20px 50px 10px 50px;
+                    color: #fff;
+                    position: relative;
+                    z-index:1; 
+                }
+                nav{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    position: relative;
+                    z-index:1; 
+                }
+                ul{
+                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    li{
+                        list-style: none;
+                        width: 100%;
+                        padding: 10px;
+                        a{
+                            font-family: $raleway;
+                            font-weight: 700;
+                            text-decoration: none;
+                            font-size: 12px;
+                            color: #fff;
+                        }
+                    }
+                }
+                .button{
+                    @include tam(100%,40%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    z-index:1; 
+                    a{
+                        background-color: black;
+                        color: #fff;
+                        font-size: 15px;
+                        padding: 15px 100px 15px 100px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        text-align: center;
+                     }
+                }
+            }
+        }
+        .grupo2{
+            // background-color: #fff;
+            @include tam(100%,50%);
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center ;
+            z-index: 1;
+            .piano img{
+                @include tam(100%,100%);
+            }
+        }
+        }  
+       
+    }
+    
+    section::before{
+        content: "";
+        width: 100%;
+        // height: auto;
+        min-height: 120vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(#fff, #000 ,#fff);
+        opacity: 0.7;
+    
+    }
+    
+    
+}
