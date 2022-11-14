@@ -1,7 +1,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
+@media screen and (min-width: 1200px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+  }
+  .section__piano {
+    background-image: url(../cint-img/image2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+  }
+  .section__piano .new {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .section__piano .new h1 {
+    width: 400px;
+    height: 100px;
+    font-family: "Abril Fatface";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    z-index: 1;
+  }
+  .section__piano .new__start {
+    display: flex;
+  }
+  .section__piano .principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo1 {
+    padding: 100px;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo1 h2 {
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    color: #fff;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo1 .new__start {
+    display: flex;
+    width: 50%;
+    height: 30%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .section__piano .principal .grupo1 .new__start p {
+    font-family: "Raleway";
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+  }
+  .section__piano .principal .grupo1 .new__precio h1 {
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    color: #fff;
+  }
+  .section__piano .principal .grupo1 .new__precio p {
+    font-family: "Raleway";
+    font-size: 15px;
+    line-height: 20px;
+    padding: 5px;
+    color: #fff;
+  }
+  .section__piano .principal .grupo1 .new__precio nav {
+    width: 80%;
+    height: 100%;
+  }
+  .section__piano .principal .grupo1 .new__precio ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .section__piano .principal .grupo1 .new__precio ul li {
+    list-style: none;
+    width: 80%;
+    padding: 10px;
+  }
+  .section__piano .principal .grupo1 .new__precio ul li a {
+    font-family: "Raleway";
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+  }
+  .section__piano .principal .grupo1 .new__precio .button {
+    background-color: black;
+    width: 250px;
+    height: 40%;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__piano .principal .grupo1 .new__precio .button a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .section__piano .principal .grupo2 {
+    z-index: 1;
+  }
+  .section__piano::after {
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#fff, #000, #fff);
+    opacity: 0.7;
+  }
+}
 .section__partners {
   background: linear-gradient(180deg, rgb(208, 204, 205) 28%, rgb(255, 255, 255) 70%);
 }
@@ -341,68 +477,6 @@
   height: 30px;
 }
 
-@media (max-width: 768px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  .texto {
-    margin-left: 5%;
-    margin-right: 5%;
-    position: relative;
-  }
-  .section__label1 {
-    margin: 20px 5%;
-  }
-  .section__label2 {
-    display: block;
-    margin: 20px 5%;
-  }
-  .section__label2 div {
-    width: 100%;
-  }
-  .section__label2 .form-label {
-    width: 100%;
-    margin-right: 0;
-  }
-  .section__label4 {
-    margin: 20px 5% 0 5%;
-  }
-  .section__parag {
-    width: 80%;
-    height: 80%;
-    text-align: center;
-    margin-left: 10%;
-  }
-  .mobile-oc {
-    display: none;
-  }
-  .mobile-border {
-    border-radius: 50px 0 0 50px;
-  }
-  .mobile-border1 {
-    border-radius: 0 50px 50px 0;
-  }
-  .partner__div {
-    width: 100%;
-  }
-  .section__part1 {
-    margin: 0 2% 7% 2%;
-  }
-  .section__part2 {
-    margin: 0 2% 7% 2%;
-  }
-  .section__part3 {
-    margin: 0 2% 7% 2%;
-  }
-  .partner__div1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-/*comienza codigo footer Rafa*/
 * {
   padding: 0;
   margin: 0;
@@ -514,6 +588,169 @@ li {
   margin-left: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  .section__piano {
+    width: 100%;
+    height: 100%;
+    background-image: url(../cint-img/image2.png);
+    align-content: center;
+    background-size: cover;
+  }
+  .section__piano .new {
+    width: 100%;
+    height: 130px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .section__piano .new h1 {
+    width: 400px;
+    height: 100px;
+    font-family: "Abril Fatface";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    z-index: 1;
+  }
+  .section__piano .new__start {
+    display: flex;
+  }
+  .section__piano .principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .section__piano .principal .grupo1 {
+    background: linear-gradient(rgb(6, 6, 6), rgb(19, 18, 18), rgb(10, 10, 10), #fff);
+    padding: 40px 40px 40px 40px;
+  }
+  .section__piano .principal .grupo1 h2 {
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo1 .new__start {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo1 .new__start p {
+    font-family: "Raleway";
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+  }
+  .section__piano .principal .grupo1 .new__precio h1 {
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo1 .new__precio p {
+    font-family: "Raleway";
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    padding: 20px 50px 10px 50px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo1 .new__precio nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo1 .new__precio ul {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .section__piano .principal .grupo1 .new__precio ul li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+  }
+  .section__piano .principal .grupo1 .new__precio ul li a {
+    font-family: "Raleway";
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+  }
+  .section__piano .principal .grupo1 .new__precio .button {
+    width: 100%;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo1 .new__precio .button a {
+    background-color: black;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 100px 15px 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .section__piano .principal .grupo2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    z-index: 1;
+  }
+  .section__piano .principal .grupo2 .piano img {
+    width: 100%;
+    height: 100%;
+  }
+  .section__piano::before {
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#fff, #000, #fff);
+    opacity: 0.7;
+  }
+}
 @media only screen and (max-width: 600px) {
   * {
     padding: 0;
@@ -594,5 +831,65 @@ li {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .texto {
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+  }
+  .section__label1 {
+    margin: 20px 5%;
+  }
+  .section__label2 {
+    display: block;
+    margin: 20px 5%;
+  }
+  .section__label2 div {
+    width: 100%;
+  }
+  .section__label2 .form-label {
+    width: 100%;
+    margin-right: 0;
+  }
+  .section__label4 {
+    margin: 20px 5% 0 5%;
+  }
+  .section__parag {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  .mobile-oc {
+    display: none;
+  }
+  .mobile-border {
+    border-radius: 50px 0 0 50px;
+  }
+  .mobile-border1 {
+    border-radius: 0 50px 50px 0;
+  }
+  .partner__div {
+    width: 100%;
+  }
+  .section__part1 {
+    margin: 0 2% 7% 2%;
+  }
+  .section__part2 {
+    margin: 0 2% 7% 2%;
+  }
+  .section__part3 {
+    margin: 0 2% 7% 2%;
+  }
+  .partner__div1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
