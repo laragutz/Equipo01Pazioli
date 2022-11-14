@@ -106,3 +106,214 @@
     }
 }
 @import"mobile";
+/*comienza codigo footer Rafa*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+%centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%centrar_columna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+    flex-wrap: wrap;
+    position: relative;
+}
+.footer__main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.logo  {
+    width: 40%;
+    
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    
+}
+
+.nosotros{
+    width: 30%;
+    
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.nosotros h2{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    margin-top: 15px;
+}
+li{
+    margin-top: 10px;
+}
+.contacto{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.contacto h2{
+    
+}
+.relleno{
+    height: 100 px;
+    clear: both;
+    background-color: transparent;
+    color: transparent;
+}
+.footer__final{
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+.redes{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.redes ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.redes li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: black 1px solid;
+    border-radius: 60%;
+    padding: 10px;
+}
+.derechos{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.derechos p{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+@media only screen and (max-width: 600px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    footer{
+        height: 100vh;
+    }
+    .footer__main{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 120px;
+    }
+    .nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .nosotros ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .nosotros li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nosotros h2{
+    display: flex;
+    justify-content: center;
+    }
+    .contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contacto ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto h2{
+    display: flex;
+    justify-content: center;
+    }
+    
+    .footer__final{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .redes{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .redes ul{
+        margin-left: 100px;
+    }
+    
+    .derechos{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .derechos p{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+}
+
