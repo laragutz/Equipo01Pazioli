@@ -67,6 +67,21 @@
 }
 
 @mixin titulo06 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+
+@mixin titulo07 {
     font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;
@@ -77,37 +92,22 @@
     align-items: center;
 }
 
-@mixin titulo07 {
+@mixin titulo08 {
     font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 43px;
+    line-height: 22px;
     display: flex;
     justify-content: left;
     align-items: left;
-}
-
-@mixin titulo08 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 14px;
-    /* identical to box height */
-    
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.05em;
-    
-    color: #000000;
 }
 
 @mixin titulo09 {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 11px;
     line-height: 14px;
     /* identical to box height */
     
@@ -123,6 +123,21 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    
+    color: #000000;
+}
+
+@mixin titulo11 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 14px;
     /* identical to box height */
     
@@ -130,5 +145,20 @@
     align-items: center;
     letter-spacing: 0.05em;
     
+    color: #000000;
+}
+
+@mixin titulo12 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+
     color: #000000;
 }
