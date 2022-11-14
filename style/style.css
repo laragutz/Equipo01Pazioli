@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   * {
     padding: 0;
     margin: 0;
