@@ -340,7 +340,7 @@
   height: 30px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
